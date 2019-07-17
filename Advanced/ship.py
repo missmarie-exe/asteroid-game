@@ -5,9 +5,9 @@ class Ship(pygame.sprite.Sprite):
 
     def __init__(self, pos):
         super().__init__()
-        self.image = pygame.image.load('ship.png')
-        self.image = pygame.transform.smoothscale(self.image, (40, 40))
-        self.image = pygame.transform.rotate(self.image, -90)
+        self.image = pygame.image.load('pikachu.png')
+        self.image = pygame.transform.scale(self.image, (50, 50))
+        self.image = pygame.transform.rotate(self.image, 0)
         self.rect = self.image.get_rect()
         self.rect.center = pos
         self.speed = pygame.math.Vector2(0, 0)
@@ -20,4 +20,3 @@ class Ship(pygame.sprite.Sprite):
 
     def reset(self, pos):
         self.rect.center = pos
-

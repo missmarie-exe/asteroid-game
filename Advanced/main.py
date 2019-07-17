@@ -84,13 +84,13 @@ def main():
                     Player.speed[1] = 10
             if event.type == pygame.KEYUP:
                 if event.key == pygame.K_RIGHT:
-                    Player.speed[0] = 0
+                    Player.speed[0] = 2
                 if event.key == pygame.K_LEFT:
-                    Player.speed[0] = 0
+                    Player.speed[0] = 2
                 if event.key == pygame.K_UP:
-                    Player.speed[1] = 0
+                    Player.speed[1] = 2
                 if event.key == pygame.K_DOWN:
-                    Player.speed[1] = 0
+                    Player.speed[1] = 2
 
         screen.fill(color)
         Player.update()
